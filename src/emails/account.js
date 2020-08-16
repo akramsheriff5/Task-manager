@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
-const dotenv=require('dotenv')
-dotenv.config()
+// const dotenv=require('dotenv')
+// dotenv.config()
 
 const luck=process.env.PORTAL
 
