@@ -1,10 +1,14 @@
 const nodemailer = require('nodemailer');
+const dotenv=require('dotenv')
+dotenv.config()
+
+const luck=process.env.PORTAL
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'akramsheriff05042000@gmail.com',
-    pass: '************'
+    pass: luck
   }
 })
 
@@ -36,4 +40,11 @@ module.exports={
     cancelmail
 }
 
+// transporter.sendMail(mailOptions, function(error, info){
+//   if (error) {
+//     console.log(error);
+//   } else {
+//     console.log('Email sent: ' + info.response);
+//   }
+// });
 

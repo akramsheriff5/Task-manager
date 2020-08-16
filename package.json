@@ -6,6 +6,7 @@
   "dependencies": {
     "bcrypt": "^5.0.0",
     "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.5.9",
@@ -16,12 +17,13 @@
     "validator": "^13.1.1"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "nodemon": "^2.0.4"
   },
   "scripts": {
-    "start": "nodemon src/index.js",
-    "dev": "nodemon src/index.js"
+    "start": "node src/index.js",
+    "dev": " env-cmd -f ./configuration/dev.env nodemon src/index.js"
   },
-  "author": "",
+  "author": "Akram",
   "license": "ISC"
 }

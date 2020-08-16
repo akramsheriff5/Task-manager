@@ -5,9 +5,7 @@ const userrouter=require('./routers/user')
 const taskrouter=require('./routers/task')
 const app=express()
 
-const port=process.env.PORT||9000
-
-
+const port=process.env.PORT
 
 app.use(express.json())
 app.use(userrouter)
